@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="scripts.js"></script>
+    </head>
+
+    <body>
+
+        <h2>Tarea de formulario en html</h2>
+
+        <p>Formulario de ingreso</p>
+
+        <form name="miform" onsubmit="return validate()">
+            <label for="nombre">Nombre: </label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Escriba su Nombre" ><br>
+            <br>
+            <label for="apellido">Apellido: </label><br>
+            <input type="text" id="apellido" name="apellido" placeholder="Escriba su Apellido" ><br>
+            <br>
+            <label for="dni">DNI: </label><br>
+            <input class="cl-validate-dni" type="text" id="dni" name="dni" placeholder="Introduzca su DNI" pattern="^[\d]{1,3}\.?[\d]{3,3}\.?[\d]{3,3}$" minlength="8" maxlength="8"><br>
+            <input class="cl-submit-dni" type="submit" value="Validar" />
+            <br>
+            <label for="fecha de nacimiento">Fecha de Nacimiento: </label><br>
+            <input type="text" id="fecha de nacimiento" name="fecha de nacimiento" placeholder="Introduzca su Fecha de Nacimiento" ><br>
+            <br>
+            <label >Genero: </label><br>
+            <input type="checkbox" id="" value="Masculino" name="genero" checked > Masculino<br>
+            <input type="checkbox" id="" value="Femenino" name="genero"> Femenino<br>
+            <input type="checkbox" id="" value="Otro" name="genero"> Otro<br>
+            <br>
+            <label for="email">E-mail: </label><br>
+            <input type="email" id="email" name="email">
+            <input type="submit" value="validate"><br>
+            <br>
+            <label for="password">Contraseña: </label><br>
+            <input type="password" id="password" name="password">
+            <br>
+            <label for="password">Repetir Contraseña: </label><br>
+            <input type="password" id="password" name="password">
+<br>
+
+    
+
+     
+       <input type="submit" value="submit">
+
+        </form>
+    </body>
+</html>
